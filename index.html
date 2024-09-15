@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>Poem Generator</title>
   </head>
   <body>
@@ -23,8 +24,10 @@
           <input
             type="text"
             placeholder="Enter the topic of your poem"
+            autocomplete="off"
             required
             class="prompt"
+            id="user-prompt"
           />
           <input type="submit" value="Submit" class="submit-button" />
         </form>
