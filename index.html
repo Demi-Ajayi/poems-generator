@@ -20,18 +20,21 @@
         <h1>AI Poem generator app</h1>
       </header>
       <main>
-        <form id="poem-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of your poem"
-            autocomplete="off"
-            required
-            class="prompt"
-            id="user-prompt"
-          />
-          <input type="submit" value="Submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="poem-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of your poem"
+              autocomplete="off"
+              required
+              class="prompt"
+              id="user-prompt"
+            />
+            <input type="submit" value="Submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: friendship, nature, music</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
       <footer>
         Built by <a href="https://github.com/Demi-Ajayi">Demi Ajayi</a> and is
